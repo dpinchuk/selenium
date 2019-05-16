@@ -3,7 +3,8 @@ package lessons.abstract_interface;
 public class Boat extends TransportAbstract {
 
     private final int riverLenth = 100;
-    private int maxScore;
+    private int maxScore
+            ;
 
     public Boat(String type, String engineType, int capacity, int maxScore) {
         super(type, engineType, capacity);

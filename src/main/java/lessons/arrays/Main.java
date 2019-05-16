@@ -45,6 +45,7 @@ public class Main {
             if (k.length() > 5) {
                 v += k.length();
             }
+
             System.out.println(k + ": " + v);
         });
     }
