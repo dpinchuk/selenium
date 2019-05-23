@@ -2,6 +2,9 @@ package objectPages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class LoginPage extends BasePage {
 
@@ -21,6 +24,13 @@ public class LoginPage extends BasePage {
     public LoginPage login(String login, String password) {
         writeText(this.loginBy, login);
         writeText(this.passwordBy, password);
+
+        List<WebElement> elementList = getDriver().findElements(By.tagName("input"));
+        elementList.forEach(e -> System.out.println(e));
+
+        elementList.get(2).sendKeys("Dima-Dima");
+        elementList.get(3).sendKeys("777-111");
+
         click(this.loginButtonBy);
         return this;
     }

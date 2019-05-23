@@ -3,7 +3,7 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
-    @Test(priority = 0)
+    @Test
     public void invalidLoginTest_EmptyLoginEmptyPassword() {
         HomePage homePage = new HomePage(getDriver());
         homePage
