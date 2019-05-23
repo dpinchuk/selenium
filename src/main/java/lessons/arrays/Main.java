@@ -1,7 +1,5 @@
 package lessons.arrays;
 
-import lessons.oop.Cars;
-
 import java.util.*;
 
 public class Main {
@@ -13,9 +11,11 @@ public class Main {
         for (int i = 1; i < arr.length; i++) {
             arr[i] = i + 2;
         }
+
         System.out.println(arr);
 
         List<Integer> integerList = new ArrayList<>();
+
         integerList.add(12); //0
         integerList.add(12); //1
         integerList.add(-10); //2
@@ -35,7 +35,7 @@ public class Main {
         stringSet.add("wqdwqdqd");
         stringSet.remove("1212212");
 
-        stringSet.forEach(e -> System.out.println(e));
+        stringSet.forEach(System.out::println);
 
         Map<String, Double> stringDoubleMap = new HashMap<>();
         stringDoubleMap.put("Length", 123.3);
